@@ -1,0 +1,50 @@
+# DataSource Configuration
+
+# DataSource configuration is controlled by external configuration properties 
+# in spring.datasource.*. For example, you might declare the following section in application.properties:
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/yaml"
+    username: "postgres"
+    password: "Krish@0034"
+    driver-class-name: "org.postgresql.Driver"
+
+
+#vault configuration
+  application:
+    name: springboot-yaml
+  cloud:
+    vault:
+      token: hvs.YsBRRu2H4S4bhWsnhWDv4jkb
+      scheme: https
+      uri: http://localhost:8200 
+
+# spring data jpa configuration
+  jpa:
+    hibernate.ddl-auto: "update"
+    show-sql: true
+    open-in-view: false
+# multipart file configuration
+  servlet: 
+    multipart: 
+      enabled: true
+      max-file-size: "10MB"
+      file-size-threshold: "1KB"
+
+# open entityManager
+
+
+    properties:
+      hibernate:
+        format_sql: true
+
+
+# server
+
+server:
+  port: 9898
+
+
+
+  
