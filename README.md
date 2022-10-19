@@ -1,4 +1,3 @@
-# final-yaml-azure-spring
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 
 # More GitHub Actions for Azure: https://github.com/Azure/actions
@@ -101,6 +100,6 @@ jobs:
 
           slot-name: 'production'
 
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1010d580fa164a429bf4704c22f5c815 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1f747f78edb848d2a772718aef41eef9 }}
 
           package: '*.jar'
